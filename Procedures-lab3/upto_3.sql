@@ -1,0 +1,10 @@
+CREATE PROCEDURE upto_3
+AS
+BEGIN
+	ALTER TABLE Hub
+	ADD CONSTRAINT d4 DEFAULT 'None' FOR HubName
+END
+GO
+EXEC upto_3
+
+select* from Hub
